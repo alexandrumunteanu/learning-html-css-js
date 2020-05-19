@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML form demo</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+            input:required {
+                border-left: 4px solid #c33;
+            }
+            input:focus:invalid,
+            textarea:focus:invalid,
+            select:focus:invalid {
+                color: #c33;
+                border-color: #c33;
+            }
+            input:focus:invalid:focus,
+            textarea:focus:invalid:focus,
+            select:focus:invalid:focus {
+                border-color: #c33;
+                -webkit-box-shadow: 0 0 6px #fcc;
+                -moz-box-shadow: 0 0 6px #fcc;
+                box-shadow: 0 0 6px #fcc;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <article class="container">
+                <section id="search">
+                    <h1>Search</h1>
+                    <form novalidate>
+                        <input
+                            type="search"
+                            class="form-control"
+                            placeholder="search" />
+                    </form>
+                </section>
+                <section id="contact-info">
+                    <h1>Contact Info</h1>
+                    <form>
+                        <p>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="first and last name"
+                                required />
+                        </p>
+                        <p>
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="email address"
+                                required />
+                        </p>
+                        <p>
+                            <input
+                                type="tel"
+                                class="form-control"
+                                placeholder="phone number"
+                                required />
+                        </p>
+                        <p>
+                            <input
+                                type="url"
+                                class="form-control"
+                                placeholder="web address" />
+                        </p>
+                        <div>
+                            <button class="btn btn-secondary">Cancel</button>
+                            <button class="btn btn-primary">Save</button>
+                        </div>
+                    </form>
+                </section>
+            </article>
+        </main>
+        <footer></footer>
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
